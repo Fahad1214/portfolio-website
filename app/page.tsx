@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <SpeedInsights/>
-      <VisitorTracker />
+      {/* <VisitorTracker /> */}
       <Header />
       <HeroSection />
       <ServicesSection />
