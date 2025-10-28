@@ -44,15 +44,21 @@ export function ProjectsSection() {
       description:
         "Innerwell offers at-home psychedelic therapy and mental health services across multiple U.S. states. As Front-End Developer, I worked on creating a clean, responsive, user-friendly website UI that helps users explore services, take assessments, book consultations and navigate a wide range of therapy and psychiatric modalities. Focus was on accessibility, performance and seamless experience across devices.",
       image: "/ProjectsThumbnail/innerwell.jpeg?height=300&width=500",
-      technologies: ["React.js", "Next.js", "Tailwind CSS", "Responsive Design", "Accessibility"],
+      technologies: [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Responsive Design",
+        "Accessibility",
+      ],
       liveUrl: "https://helloinnerwell.com/",
       githubUrl: "#",
       featured: true,
       stats: { stars: 0, users: "Unknown" },
       year: "2023-2024",
-      category: "Health / Wellness"
+      category: "Health / Wellness",
     },
-    
+
     {
       title: "Encord",
       description:
@@ -140,7 +146,20 @@ export function ProjectsSection() {
       featured: true,
       stats: { stars: 92, users: "1.4k" },
       year: "2025",
-      category: "FinTech",
+      category: "HealthTech / Biomechanics",
+    },
+    {
+      title: "HLYX",
+      description:
+        "HLYX is a versatile platform for relationship-management, business networking and marketing — built for entrepreneurs, leaders and creators navigating the new economy. It centralises your connections, provides multi-profile branding, community tools and analytics to help you grow your network and business. “We’ve redesigned business networking technology to be versatile, useful, and effective.”",
+      image: "https://hlyx.io/images/Group-1171279689.png",
+      technologies: ["React.js", "SCSS", "WebSocket", "Wallet Integration"], // <-- you’ll want to replace this with the actual stack if you know it
+      liveUrl: "https://hlyx.io/",
+      githubUrl: "#",
+      featured: true,
+      stats: { stars: 92, users: "1.4k" },
+      year: "2024",
+      category: "Business networking / Brand promoter",
     },
   ];
 
@@ -191,7 +210,11 @@ export function ProjectsSection() {
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className={`w-full ${project.title=="Figur8"?'object-scale-down':'object-cover'} h-64 transition-transform duration-700  group-hover:scale-110`}
+                  className={`w-full ${
+                    project.title == "Figur8"
+                      ? "object-scale-down"
+                      : "object-cover"
+                  } h-64 transition-transform duration-700  group-hover:scale-110`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 

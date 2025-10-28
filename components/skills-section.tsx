@@ -21,6 +21,7 @@ export function SkillsSection() {
         "React",
         "Next.js",
         "Vue.js",
+        "Shopify",
         "HTML5",
         "CSS3",
         "Tailwind CSS",

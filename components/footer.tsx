@@ -22,7 +22,7 @@ export function Footer() {
     { label: "Services", href: "#services" },
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
-    // { label: "Experience", href: "#experience" },
+    { label: "Experience", href: "#experience" },
     // { label: "Reviews", href: "#reviews" },
     // { label: "Blog", href: "#blog" },
     // { label: "Certificates", href: "#certificates" },

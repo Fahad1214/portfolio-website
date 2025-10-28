@@ -74,9 +74,12 @@ export function HeroSection() {
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent leading-tight tracking-tight">
               Hi! I'm Fahad
             </h1>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-10 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-6 tracking-tight">
               Expert Full-Stack Developer
             </h2>
+            <p className="text-lg sm:text-xl text-muted-foreground mb-10">
+              <span className="text-primary font-semibold">3+ Years</span> of Experience | Currently at WSquare
+            </p>
             <p className="text-xl sm:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-light">
               Crafting Beautiful, Functional Web Experiences with modern
               technologies. I specialize in building responsive, user-centric

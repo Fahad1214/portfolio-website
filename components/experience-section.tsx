@@ -14,10 +14,17 @@ export function ExperienceSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
             Work Experience
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
             My professional journey through various companies and roles, building expertise in front-end development and
             design.
           </p>
+          <div className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary/10 to-secondary/10 text-foreground rounded-full border border-primary/20 backdrop-blur-sm">
+            <Building2 size={18} className="mr-2 text-primary" />
+            <span className="font-semibold">
+              <span className="text-primary text-2xl">3+</span>
+              <span className="ml-2">Years of Experience</span>
+            </span>
+          </div>
         </div>
 
         <div className="max-w-7xl mx-auto space-y-8">
@@ -30,15 +37,34 @@ export function ExperienceSection() {
                 <div className="flex flex-col md:flex-row gap-6">
                   {/* Company Logo */}
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 p-3 group-hover:scale-110 transition-transform duration-300">
-                      <Image
-                        src={experience.companyLogo || "/placeholder.svg"}
-                        alt={`${experience.company} logo`}
-                        width={40}
-                        height={40}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
+                    {experience.companyUrl ? (
+                      <a 
+                        href={experience.companyUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 p-3 group-hover:scale-110 transition-transform duration-300 cursor-pointer hover:bg-gradient-to-br hover:from-primary/20 hover:to-secondary/20">
+                          <Image
+                            src={experience.companyLogo || "/placeholder.svg"}
+                            alt={`${experience.company} logo`}
+                            width={40}
+                            height={40}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                      </a>
+                    ) : (
+                      <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 p-3 group-hover:scale-110 transition-transform duration-300">
+                        <Image
+                          src={experience.companyLogo || "/placeholder.svg"}
+                          alt={`${experience.company} logo`}
+                          width={40}
+                          height={40}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    )}
                   </div>
 
                   {/* Experience Details */}
